@@ -21,8 +21,15 @@ for line in lines:
     image_name = line[0].split('/')[-1]
     file_path = '../behave-clone/IMG/' + image_name
     image = cv2.imread(file_path)
+    measurement = float(line[3])
     images.append(image)
-    measurements.append(float(line[3]))
+    measurements.append(measurement)
+
+
+    image = np.fliplr(image)
+    measurement = -measurement
+    images.append(image)
+    measurements.append(measurement)
 
 X_train = np.array(images)
 Y_train = np.array(measurements)
