@@ -73,5 +73,5 @@ model.compile(loss='mse',optimizer='adam')
 
 model.fit(X_train,Y_train,validation_split=0.01,shuffle=True,nb_epoch=3)
 print ("ok")
-model.save('final.h5')
+model.save('model.h5')
 
