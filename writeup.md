@@ -86,6 +86,8 @@ This is the struct of the final model.
 
 ![alt text](picture/model_struct.png)
 
+The network consists of 9 layers, including a normalization layer, 5 convolutional layers and 3 fully connected layers.
+
 #### 3. Creation of the Training Set & Training Process
 
 I use the [dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/December/584f6edd_data/data.zip) which provided by Udacity.
